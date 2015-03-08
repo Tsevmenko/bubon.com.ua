@@ -1,0 +1,126 @@
+﻿@model ViewModels.Views.CheckoutModel
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<!--Checkout Page Start-->
+<div class="inner-page">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <h1>Оформление заказа</h1>
+                <strong class="title">Страница оформления заказа</strong>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="checkout-page">
+                <div class="woocommerce">
+                    <form action="#" class="checkout" method="post" name="checkout">
+                        <div id="customer_details" class="col2-set">
+                            <div class="col-1">
+                                <h3>Ваши<span class="pink"> контактные </span>данные</h3>
+                                <p id="user_name" class="form-row form-row-wide">
+                                    <label class="" for="name">Как к Вам обращаться? </label>
+                                    <input id="fio" type="text" value="@Model.name" placeholder="Пример: Иванова Екатерина" name="name" class="input-text">
+                                </p>
+                                <p id="delivery_type" class="form-row form-row-wide address-field validate-required">
+                                    <label class="" for="billing_address_1">Удобная Вам служба доставки: </label>
+                                    <select name="delivery">
+                                        <option value="" selected="selected">Выберите службу доставки…</option>
+                                        <option value="np">Новая почта</option>
+                                        <option value="intime">Интайм</option>
+                                        <option value="delivery">Деливери</option>
+                                        <option value="my">Предложите свою (напишите в комментариях)</option>
+                                    </select>
+                                </p>
+                                <p id="delivery_details" class="form-row form-row-wide address-field">
+                                    <label class="" for="deliveryDetail">
+                                        Ваши данные для доставки:
+                                        <abbr title="required" class="required">(стоимость доставки, при необходимости, сообщит менеджер)</abbr></label>
+                                    <input type="text" value="@Model.deliveryDetail" placeholder="Пример: ул.Квартальная, д5. склад №14" id="delivery_address" name="deliveryDetail" class="input-text">
+                                </p>
+                                <p id="payWay" class="form-row form-row-wide address-field validate-required" data-o_class="form-row form-row-wide address-field validate-required">
+                                    <label class="" for="way">Предпочитаемый способ оплаты </label>
+                                    <select name="payWay">
+                                        <option value="">Выберите способ оплаты…</option>
+                                        <option value="pb">Перевод на карту приватбанка</option>
+                                        <option value="bankCard">Оплата банковской картой</option>
+                                        <option value="wm">Webmoney</option>
+                                        <option value="my">Предложите свой (напишите в комментариях)</option>
+                                    </select>
+                                </p>
+                                <div class="clear"></div>
+                                <p id="email_field" class="form-row form-row-first validate-required validate-email">
+                                    <label class="" for="email">
+                                        Email адрес
+                                        <abbr title="required" class="required">(для уведомлений о обработке Вашего заказа или для отправки счета на оплату)</abbr></label>
+                                    <input type="text" value="" placeholder="Пример: alla-bluz@ukr.net" id="email" name="email" class="input-text">
+                                </p>
+                                <p id="phone_field" class="form-row form-row-last validate-required">
+                                    <label class="" for="phone">Номер телефона (наш менеджер свяжется с Вами для уточнения деталей заказа)</label>
+                                    <input type="text" value="" placeholder="Пример: 0952231710" id="phone" name="phone" class="input-text">
+                                </p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="col-2">
+                                <h3>Ваши комментарии</h3>
+                                <p id="order_comments_field" class="form-row notes">
+                                    <textarea rows="2" cols="5" placeholder="Если у вас есть комментарии к заказу, можете оставить их здесь" id="order_comment" class="input-text" name="comment"></textarea>
+                                </p>
+                            </div>
+                        </div>
+                        <h3 id="order_review_heading">Состав <span class="pink">заказа</span></h3>
+                        <div id="order_review" style="position: relative;">
+                            <table class="shop_table">
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">Название</th>
+                                        <th class="product-total">Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr class="cart-subtotal">
+                                        <th>Общая стоимость</th>
+                                        <td><span class="amount">@Model.total грн</span></td>
+                                    </tr>
+                                    <tr class="shipping">
+                                        <th>Доставка</th>
+                                        <td>Стоимость доставки может сообщить менеджер</td>
+                                    </tr>
+                                    <tr class="total_n">
+                                        <th><strong>Итого</strong></th>
+                                        <td><strong><span class="amount">@Model.total грн.</span></strong></td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    @for(int i = 0; i < Model.list.Count; i++)
+                                    {
+                                        <tr class="checkout_table_item">
+                                            @Html.HiddenFor(p => Model.list[i].id)
+                                            @Html.HiddenFor(p => Model.list[i].name)
+                                            @Html.HiddenFor(p => Model.list[i].price)
+                                            @Html.HiddenFor(p => Model.list[i].quantity)
+                                            <td class="product-name">@Model.list[i].name <strong class="product-quantity">× @Model.list[i].quantity</strong></td>
+                                            <td class="product-total"><span class="amount">@(Model.list[i].price*Model.list[i].quantity) грн</span></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            @Html.HiddenFor(p=>Model.total)
+                            <div id="payment">
+                                <div class="form-row place-order">
+                                    <input type="submit" value="Оформить заказ" id="place_order" name="woocommerce_checkout_place_order" class="button alt">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Checkout Page End-->

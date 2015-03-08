@@ -1,0 +1,414 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<!--Banner Start-->
+<div class="" id="banner">
+    <div class="holder">
+        <div class="banner-areo">
+            <strong class="title">Детские товары для Вас и Ваших детей по самым приятным ценам.</strong>
+        </div>
+    </div>
+    <div id="featured" class="flexslider et_slider_auto et_slider_speed_4200">
+        <ul class="slides">
+            <li class="slide flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;">
+                <div class="slider_image"><a href="#">
+                    <img src="~/images/banner-img-1.jpg" alt="img"></a></div>
+            </li>
+            <li class="slide" style="width: 100%; float: left; margin-right: -100%; position: relative;">
+                <div class="slider_image"><a href="#">
+                    <img src="~/images/banner-img-3.jpg" alt="img"></a></div>
+            </li>
+            <li class="slide" style="width: 100%; float: left; margin-right: -100%; position: relative;">
+                <div class="slider_image"><a href="#">
+                    <img src="~/images/banner-img-2.jpg" alt="img"></a></div>
+            </li>
+        </ul>
+        <div id="switcher">
+            <div class="item">
+                <div class="wrap active">
+                    <span class="image">
+                        <img src="~/images/banner-img-1-thumb.jpg" alt="img">
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="wrap ">
+                    <span class="image">
+                        <img src="~/images/banner-img-1-thumb-2.jpg" alt="img">
+                    </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="wrap ">
+                    <span class="image">
+                        <img src="~/images/banner-img-1-thumb-3.jpg" alt="img">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- #switcher -->
+        <ol class="flex-control-nav flex-control-paging">
+            <li>
+                <a class="flex-active">1</a>
+            </li>
+            <li>
+                <a>2</a>
+            </li>
+            <li>
+                <a>3</a>
+            </li>
+        </ol>
+        <ul class="flex-direction-nav">
+            <li>
+                <a class="flex-prev" href="#">Назад</a>
+            </li>
+            <li>
+                <a class="flex-next" href="#">Вперед</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Banner End-->
+<div id="main">
+    <!--Featured Product Start-->
+    <section class="featured-product fadeInLeft cp_load">
+        <div class="hold">
+            <div id="clouds">
+                <div class="x1">
+                    <strong class="title"><a href="#" >Посмотрите <span class="pink">наши</span> новые <span class="pink">мягкие</span> игрушки!</a></strong>
+                    <img src="~/images/aeroplane-img-1.png" alt="img">
+                </div>
+            </div>
+            <div class="holder">
+                <div class="cloud">
+                    <h2>Наши <span class="breck">Новинки</span></h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="featured-tab">
+                                <h3><span class="sky">Категории</span> продуктов</h3>
+                                <ul class="nav nav-tabs featured-tab-nav" id="myTab1">
+                                    <li class="active"><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Мягкие игрушки</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Конструкторы</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Куклы</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Спорттовары</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Тесктиль</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>В помощь мамочке</a></li>
+                                    <li><a href="#" data-toggle="tab"><i class="fa fa-star"></i>Для мамочки</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-1.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-2.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-3.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                                         <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-3.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                                         <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-3.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                                         <li>
+                                            <div class="box">
+                                                <strong class="title">Новый ребенок в Ваш дом</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-girl-img-3.jpg" alt="img">
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                </div>
+                                                <strong class="price"><span class="small">153,00</span> грн.</strong>
+                                                <a href="#" class="btn-buy">Подробнее</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="boy">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-boy-img-1.jpg" alt="img">
+                                                    <a href="#" class="add-wishlist">Add to Wishlist</a>
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-boy-img-2.jpg" alt="img">
+                                                    <a href="#" class="add-wishlist">Add to Wishlist</a>
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/baby-boy-img-3.jpg" alt="img">
+                                                    <a href="#" class="add-wishlist">Add to Wishlist</a>
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="Newborn">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/new-born-img-1.jpg" alt="img">
+                                                    <a href="#" class="add-wishlist">Add to Wishlist</a>
+                                                    <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/new-born-img-2.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/new-born-img-3.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="Shoes">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/shoes-img-1.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/shoes-img-2.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/shoes-img-3.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="Accessories">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/accessories-img-1.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/accessories-img-2.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/accessories-img-3.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="Clearance">
+                                    <ul class="featured-detail">
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/toys-img-1.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/toys-img-2.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <strong class="title">Phasellus nec purus ipsum</strong>
+                                                <div class="frame">
+                                                    <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                                    <div class="twelve-point-star"><strong class="new">New</strong></div>
+                                                    <img src="~/images/toys-img-3.jpg" alt="img">
+                                                    <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-wishlist">Add to Wishlist</a> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="add-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                </div>
+                                                <strong class="price">Rs: <span class="small">153,00</span> I UN</strong> <a href="http://html.crunchpress.net/children-store/boxed/index.html#" class="btn-buy">More</a>
+                                                <div class="cart-bag"><strong class="bag">my bag | not loggad </strong><strong class="item">Item in checkout <span class="num">[ ]</span></strong> </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Featured Product End-->

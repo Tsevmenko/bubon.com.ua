@@ -1,0 +1,80 @@
+﻿@model ViewModels.Views.Categories
+
+@{
+    ViewBag.Title = "Категории";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdminPage.cshtml";
+}
+@if (Model.res)
+{
+    <p>Обновления были успешно сохранены</p>
+}
+<div class="heading">
+    <div class="container">
+        <div class="row">
+            <h1>Категории</h1>
+            <strong class="title">Страница редактирования категорий сайта</strong>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Categories", "Admin", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Новая категория:</legend>
+        <p>Название новой категории:</p>
+        @{int i = 0;
+
+          foreach (var el in Model.languages)
+          { 
+            @Html.Label(el.Value)
+            @Html.HiddenFor(p => p.newCategory.names[i].languageId)
+            @Html.TextBoxFor(p => p.newCategory.names[i].name, new { @style = "width: " + (100 / Model.languages.Count).ToString() })
+              i++;
+          }
+        }
+
+        <div class="line">
+            @Html.LabelFor(model => model.newCategory.parentCategoryId, "Родительская категория")
+            @Html.DropDownListFor(p => p.newCategory.parentCategoryId, Model.newCategory.ParentCategory, "Выберите родительскую категорию")
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Список категорий:</legend>
+
+        @{i = 0; bool pr = true;}
+        @foreach (var lang in Model.languages)
+        {
+            if (Model.categories[i].languageId == lang.Key)
+            {
+                @Html.Label(lang.Value);
+                int j = 0;
+                for (j = 0; j < Model.categories[i].categories.Count; j++)
+                {
+                    if (lang.Key == 16) 
+                    { 
+                        @Html.Raw("<div class=\"half-width\">"); 
+                        <div class="line">
+                            @Html.CheckBoxFor(model => model.categories[i].categories[j].del) 
+                            @Html.LabelFor(model => model.categories[i].categories[j].del, "Удалить?")
+                        </div>
+                    }
+                    @Html.HiddenFor(p => p.categories[i].categories[j].id)
+                    @Html.HiddenFor(p => p.categories[i].categories[j].languageId)
+                    @Html.TextBoxFor(p => p.categories[i].categories[j].name)
+                    if (lang.Key == 16)
+                    {
+                        if(pr)
+                        {
+                            @Html.LabelFor(p => p.categories[i].categories[j].parentCategory, "Новая родительская категория: ", new { @class = "drop-caption" }); pr = false;
+                        }
+                        @Html.DropDownListFor(p => p.categories[i].categories[j].parentCategory, Model.newCategory.ParentCategory, "Выберите родительскую категорию")        
+                        @Html.Raw("</div>")
+                    }
+                }
+                i++;
+            }
+        }
+    </fieldset> 
+
+    <input value="Сохранить" name="save" class="button" type="submit">
+}

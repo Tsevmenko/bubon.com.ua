@@ -1,0 +1,99 @@
+﻿@model ViewModels.Views.CartModel
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<!--Cart Page Start-->
+<div class="inner-page">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <h1>Моя корзина</h1>
+                <strong class="title">Корзина с моими покупками</strong>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @{ double total = 0; }
+        @using (Html.BeginForm("RecalculateCart", "Home", FormMethod.Post))
+        {
+            <div class="row">
+                <div class="cart-table fadeInUpBig animated">
+                    @if (Model.list.Count > 0)
+                    {
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="hidden-phone">Картинка</td>
+                                <td>Название</td>
+                                <td>Цена за единицу</td>
+                                <td class="hidden-phone">Количество</td>
+                                <td>Общая цена</td>
+                                <td>Удалить</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.list.Count; i++)
+                            {
+                                <tr class="product-@Model.list[i].id">
+                                    <td class="hidden-phone">
+                                        @Html.HiddenFor(p => Model.list[i].imagePath)
+                                        @Html.HiddenFor(p => Model.list[i].id)
+                                        @Html.HiddenFor(p => Model.list[i].name)
+                                        @Html.HiddenFor(p => Model.list[i].price)
+                                        <img src="@Model.list[i].imagePath" width="100"; height="100"; "@Model.list[i].name"></td>
+                                    <td class="name">
+                                        <p>@Model.list[i].name</p>
+                                    </td>
+                                    <td>
+                                        <p>@Model.list[i].price грн.</p>
+                                    </td>
+                                    <td class="hidden-phone">
+                                        <input data-val="true" type="number" id="list_0__quantity" name="list[@i].quantity" style="text-align:center; height: 35px; border: 1px solid #e5dcd0; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;" value="@Model.list[i].quantity"/>
+                                    <td>
+                                        @{total = Model.list[i].price * Model.list[i].quantity; }
+                                        <p>@(Model.list[i].price * Model.list[i].quantity) грн.</p>
+                                    </td>
+                                    <td>
+                                        <button data-prod="@Model.list[i].id" class="productDeleter prod-@Model.list[i].id"><i class="fa fa-trash-o"></i></button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    }
+                    else
+                    {
+                    <p>@Model.message</p>
+                    }
+                </div>
+                <div class="order-detail">
+                    <div class="total">
+                        <h4>Итого: @total грн.</h4>
+                    </div>
+                    <div class="update">
+                        <input type="submit" class="form-btn proceed-btn" style="float: right; margin-top: -17px; margin-bottom: 25px;" value="Пересчитать" />
+                        <a class="form-btn proceed-btn" href="/checkout/" style="float: right; margin-top: -17px;"><i class="fa fa-refresh"></i>Оформить заказ</a>
+                    </div>
+                </div>
+            </div>}
+    </div>
+</div>
+<!--Cart Page End-->
+
+<!-- Cart deleter popup -->
+<div id="delProdInCart" title="Удаление товара?" style="display: none;">
+    <div class="tweets-box fadeIn cp_load">
+        <div class="pic" style="background: url(../images/simon.jpg) no-repeat left top; width: 250px; height: 250px;">ask</div>
+        <div class="text" style="width: 270px; float: right; margin-top: 60px">
+            <br />
+            <a href="javascript: return false;" class="tweet">Вы действительно хотите <span class="sky">удалить</span> товар из корзины?</a>
+        </div>
+        <div class="update">
+            <a id="cartDelProdOK" class="form-btn proceed-btn" data-prodid="0" href="#" style="float: right; margin-top: -17px; float: left; margin-left: 300px; background-color: #0083a1;">Да, удалить</a>
+            <a id="cartDelProdNON" class="form-btn proceed-btn" href="#" style="float: right; margin-top: -17px; float: right; margin-top: -42px;">Нет, уже не хочу</a>
+        </div>
+    </div>
+</div>
+<!-- Cart deleter popup end -->

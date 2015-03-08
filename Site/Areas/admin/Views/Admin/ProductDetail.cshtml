@@ -1,0 +1,59 @@
+﻿@model ViewModels.Views.ExistingProduct
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdminPage.cshtml";
+}
+
+<!--Product Details Page Start-->
+    <div class="inner-page">
+      <div class="heading">
+        <div class="container">
+          <div class="row">
+            <h1>@Model.name</h1>
+            @{/*<strong class="title">Our Latest Product Detail</strong> */}
+          </div>
+        </div>
+      </div>
+      <section class="product-detail">
+        <div class="container">
+          <div class="row">
+            <div class="product-cart-area">
+              <div class="frame"> <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span> <a style="width:500px;"href="#"><img src="~/images/products/@Model.id/main/main.jpg" alt="@Model.id"></a> </div>
+              <div class="text">
+                <h2> <span class="pink">@Model.name</span></h2>
+                <p>@Model.description</p>
+                  <strong class="cut-price">@if (Model.oldPrice != 0) { Html.Raw("119.00"); }</strong>
+                   <strong class="price">@Model.price грн </strong>
+                @{/*<ul class="product-info">
+                  <li> <strong class="title">Brand: <span class="info">Children Store</span></strong> </li>
+                  <li> <strong class="title">Product Code: <span class="info">A12345</span></strong> </li>
+                  <li> <strong class="title">Availability: <span class="info">In Stock</span></strong> </li>
+                  <li> <strong class="title">Category: <span class="info">baby sitter, toys, teddy bear, children cloths</span></strong> </li>
+                </ul>
+                <div class="rating-star"> <strong class="title"></strong>@{/* <a href="#"><img src="~/images/review-start-img.png" alt="img"></a>*/} </div>
+
+                <form action="#" class="add-cart-col" style="margin-top:20px;">
+                  <a href="#" class="btn-add-cart"><i class="fa fa-shopping-cart"></i> Купить</a>
+                </form>
+                @{/*<div class="share-social"> <strong class="title">Поделиться:</strong>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                  </ul>
+                </div>*/}
+              </div>
+            </div>
+            <div class="related-products">
+              <h2>Мы <span class="pink">рекомендуем</span></h2>
+              <div class="frame fadeInRight cp_load"> <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span> <a href="http://html.crunchpress.net/children-store/boxed/product-detail.html#"><img src="~/images/product-img-4.jpg" alt="img"></a>
+                <div class="caption"> <strong class="title">Кот в сапогах</strong> <strong class="price">$ 99.99</strong>
+                  <p>Новая модель кота в сапогах, старого доброго мультфильма...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <!--Product Details Page End--> 

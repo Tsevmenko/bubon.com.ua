@@ -1,0 +1,43 @@
+﻿@model ViewModels.Views.Currency
+
+@{
+    ViewBag.Title = "Валюты";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdminPage.cshtml";
+}
+@if (Model.res)
+{
+    <p>Обновления были успешно сохранены</p>
+}
+<div class="heading">
+    <div class="container">
+        <div class="row">
+            <h1>Валюты</h1>
+            <strong class="title">Страница редактирования валют сайта</strong>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Currencies", "Admin", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Новая валюта:</legend>
+        <p>Название новой валюты: @Html.TextBoxFor(p => p.newCurrency.name)</p>
+    </fieldset>
+    <fieldset>
+        <legend>Список валют:</legend>
+        @for (int i = 0; i < Model.currencies.Count(); i++)
+        {
+            <div id="cur_@Model.currencies[i].id" class="adminCover">
+
+                <div class="line">
+                    @Html.CheckBoxFor(model => model.currencies[i].del) 
+                    @Html.LabelFor(model => model.currencies[i].del, "Удалить?")
+                </div>
+
+                @Html.TextBoxFor(model => model.currencies[i].name)
+                @Html.HiddenFor(model => model.currencies[i].id)
+            </div>
+        }
+    </fieldset> 
+    <input value="Сохранить" name="save" class="button" type="submit">
+}

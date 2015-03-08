@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f7c75f2eafe4153a0ee3c969f92f2e2" Name="Diagram1">
+        <EntityTypeShape EntityType="uh343423_dbModel.Buyer" Width="1.5" PointX="3.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Category" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.CategoryDescription" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Characteristic" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.CharacteristicValue" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Color" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Currency" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Description" Width="1.5" PointX="8.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Discount" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Language" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Order" Width="1.5" PointX="6" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Photo" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Price" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Product" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.ProductOrder" Width="1.5" PointX="8.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.Size" Width="1.5" PointX="5.25" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uh343423_dbModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Order_Buyers" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Category_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_CategoryDescription_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_CategoryDescription_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Characteristic_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_CharacteristicValue_Characteristic" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_CharacteristicValue_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Color_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Price_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Description_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Description_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_ProductOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Photo_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Price_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_ProductOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.FK_Size_Size" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.ProductDiscounts" ManuallyRouted="false" />
+        <AssociationConnector Association="uh343423_dbModel.ProductsInCategories" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

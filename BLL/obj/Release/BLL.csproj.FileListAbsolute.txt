@@ -1,0 +1,15 @@
+E:\release\ChildrenShop\BLL\bin\Release\BLL.dll
+E:\release\ChildrenShop\BLL\bin\Release\BLL.pdb
+E:\release\ChildrenShop\BLL\bin\Release\DBModels.dll
+E:\release\ChildrenShop\BLL\bin\Release\DLL.dll
+E:\release\ChildrenShop\BLL\bin\Release\ViewModels.dll
+E:\release\ChildrenShop\BLL\bin\Release\EntityFramework.dll
+E:\release\ChildrenShop\BLL\bin\Release\DBModels.pdb
+E:\release\ChildrenShop\BLL\bin\Release\DLL.pdb
+E:\release\ChildrenShop\BLL\bin\Release\ViewModels.pdb
+E:\release\ChildrenShop\BLL\bin\Release\EntityFramework.xml
+E:\release\ChildrenShop\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+E:\release\ChildrenShop\BLL\obj\Release\BLL.dll
+E:\release\ChildrenShop\BLL\obj\Release\BLL.pdb
+E:\release\ChildrenShop\BLL\bin\Release\shopEntities.mdf
+E:\release\ChildrenShop\BLL\bin\Release\shopEntities_log.ldf

@@ -1,0 +1,51 @@
+﻿@model ViewModels.Views.Language
+
+@{
+    ViewBag.Title = "Языки";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdminPage.cshtml";
+}
+@if (Model.res)
+{
+    <p>Обновления были успешно сохранены</p>
+}
+<div class="heading">
+    <div class="container">
+        <div class="row">
+            <h1>Языки</h1>
+            <strong class="title">Страница редактирования языков сайта</strong>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Languages", "Admin", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Новый язык:</legend>
+        <p>Название нового языка: @Html.TextBoxFor(p => p.newLanguage.name)</p>
+        <div class="line">
+            @Html.CheckBoxFor(model => model.newLanguage.isDefault) 
+            @Html.LabelFor(model => model.newLanguage.isDefault, "Основной язык сайта?")
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Список валют:</legend>
+        @for (int i = 0; i < Model.languages.Count(); i++)
+        {
+            <div id="cur_@Model.languages[i].id" class="adminCover">
+
+                <div class="line">
+                    @Html.CheckBoxFor(model => model.languages[i].del) 
+                    @Html.LabelFor(model => model.languages[i].del, "Удалить?")
+                </div>
+                <div class="line">
+                    @Html.CheckBoxFor(model => model.languages[i].isDefault) 
+                    @Html.LabelFor(model => model.languages[i].isDefault, "Основной язык сайта?")
+                </div>
+
+                @Html.TextBoxFor(model => model.languages[i].name)
+                @Html.HiddenFor(model => model.languages[i].id)
+            </div>
+        }
+    </fieldset> 
+    <input value="Сохранить" name="save" class="button" type="submit">
+}

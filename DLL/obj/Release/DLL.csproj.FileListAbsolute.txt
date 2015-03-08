@@ -1,0 +1,10 @@
+E:\release\ChildrenShop\DLL\bin\Release\DLL.dll.config
+E:\release\ChildrenShop\DLL\bin\Release\DLL.dll
+E:\release\ChildrenShop\DLL\bin\Release\DLL.pdb
+E:\release\ChildrenShop\DLL\bin\Release\EntityFramework.dll
+E:\release\ChildrenShop\DLL\bin\Release\EntityFramework.xml
+E:\release\ChildrenShop\DLL\obj\Release\DLL.csprojResolveAssemblyReference.cache
+E:\release\ChildrenShop\DLL\obj\Release\DLL.dll
+E:\release\ChildrenShop\DLL\obj\Release\DLL.pdb
+E:\release\ChildrenShop\DLL\bin\Release\shopEntities.mdf
+E:\release\ChildrenShop\DLL\bin\Release\shopEntities_log.ldf

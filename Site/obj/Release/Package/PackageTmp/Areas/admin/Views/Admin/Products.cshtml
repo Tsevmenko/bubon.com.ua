@@ -1,0 +1,30 @@
+﻿@model List<ViewModels.Views.ExistingProduct>
+
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<div class="inner-page">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <h1>Продукты</h1>
+                <strong class="title">Список всех продуктов сайта</strong>
+            </div>
+        </div>
+    </div>
+    <table>
+        @foreach (var el in Model)
+        { 
+            <tr>
+                <td style="padding: 5px;">@el.id</td>
+                <td style="padding: 5px;">@el.name</td>
+                <td style="padding: 5px;">@el.price</td>
+                <td style="padding: 5px;">@Html.ActionLink("Редактировать", "ProductDetail", new { id = el.id })</td>
+                <td style="padding: 5px;">@Html.ActionLink("Удалить", "Products", new { delete = el.id })</td>
+            </tr>
+        }
+        <tr>@Html.ActionLink("Добавить новый продукт", "AddProduct")</tr>
+    </table>
+</div>

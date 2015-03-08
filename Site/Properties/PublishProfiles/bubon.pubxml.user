@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/admin/Views/Admin/AddProduct.cshtml">
+      <publishTime>11/08/2014 17:44:52</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Categories.cshtml">
+      <publishTime>11/04/2014 21:14:04</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Category.cshtml">
+      <publishTime>11/16/2014 14:13:02</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Currencies.cshtml">
+      <publishTime>11/04/2014 21:13:42</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Index.cshtml">
+      <publishTime>11/21/2014 14:40:09</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Languages.cshtml">
+      <publishTime>11/04/2014 21:13:26</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/ProductDetail.cshtml">
+      <publishTime>11/21/2014 15:41:45</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/ProductRedact.cshtml">
+      <publishTime>11/16/2014 14:04:06</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Admin/Products.cshtml">
+      <publishTime>11/08/2014 17:28:50</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Shared/_LayoutAdminPage.cshtml">
+      <publishTime>11/21/2014 14:43:44</publishTime>
+    </File>
+    <File Include="Areas/admin/Views/Web.config">
+      <publishTime>10/19/2014 18:05:41</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/19/2014 18:14:08</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>11/25/2014 14:41:17</publishTime>
+    </File>
+    <File Include="bin/DLL.dll">
+      <publishTime>11/25/2014 14:41:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/18/2014 12:53:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/19/2014 17:22:27</publishTime>
+    </File>
+    <File Include="bin/Moveax.Mvc.ErrorHandler.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/19/2014 18:14:08</publishTime>
+    </File>
+    <File Include="bin/Site.dll">
+      <publishTime>11/25/2014 15:08:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/19/2014 17:22:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/19/2014 17:22:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/19/2014 17:22:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/19/2014 18:14:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/14/2014 22:38:51</publishTime>
+    </File>
+    <File Include="bin/ViewModels.dll">
+      <publishTime>11/24/2014 18:50:03</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/19/2014 18:14:09</publishTime>
+    </File>
+    <File Include="css/basic.css">
+      <publishTime>11/21/2014 14:16:38</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>11/08/2014 10:46:31</publishTime>
+    </File>
+    <File Include="css/boxed.css">
+      <publishTime>11/06/2014 22:09:06</publishTime>
+    </File>
+    <File Include="css/color-1.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/cp_load.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/css%281%29.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/css.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>11/21/2014 19:41:19</publishTime>
+    </File>
+    <File Include="css/easy-responsive.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>11/21/2014 19:52:48</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>11/22/2014 00:20:22</publishTime>
+    </File>
+    <File Include="css/jquery.bxslider.css">
+      <publishTime>11/06/2014 22:09:06</publishTime>
+    </File>
+    <File Include="css/jquery.mCustomScrollbar.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/light-box.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="css/prettyPhoto.css">
+      <publishTime>11/06/2014 22:09:06</publishTime>
+    </File>
+    <File Include="css/slider-range.css">
+      <publishTime>11/04/2014 20:42:19</publishTime>
+    </File>
+    <File Include="externalFonts/Lato.css">
+      <publishTime>10/17/2014 21:16:18</publishTime>
+    </File>
+    <File Include="externalFonts/Montserrat.css">
+      <publishTime>10/17/2014 21:17:02</publishTime>
+    </File>
+    <File Include="externalFonts/OpenSans.css">
+      <publishTime>10/17/2014 21:17:20</publishTime>
+    </File>
+    <File Include="externalFonts/Raleway.css">
+      <publishTime>10/17/2014 21:17:40</publishTime>
+    </File>
+    <File Include="font/museo500-regular-webfont.ttf">
+      <publishTime>11/05/2014 21:01:49</publishTime>
+    </File>
+    <File Include="font/museo500-regular-webfont.woff">
+      <publishTime>11/05/2014 21:01:49</publishTime>
+    </File>
+    <File Include="font/museo700-regular-webfont.ttf">
+      <publishTime>11/05/2014 21:01:49</publishTime>
+    </File>
+    <File Include="font/museo700-regular-webfont.woff">
+      <publishTime>11/05/2014 21:01:49</publishTime>
+    </File>
+    <File Include="font/segoeprb-webfont.ttf">
+      <publishTime>11/05/2014 21:01:50</publishTime>
+    </File>
+    <File Include="font/segoeprb-webfont.woff">
+      <publishTime>11/05/2014 21:01:50</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>11/24/2014 18:48:55</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>11/24/2014 18:48:55</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/19/2014 17:48:24</publishTime>
+    </File>
+    <File Include="images/accessories-img-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/accessories-img-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/accessories-img-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/aeroplane-img-1.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/ajax.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/aside-search-bg.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-boy-img-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-boy-img-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-boy-img-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-girl-img-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-girl-img-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baby-girl-img-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/back-top-img-2-hover.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/back-top-img-2.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/back-top-img.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/baloon-img.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-aero.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-after-bg.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-before-bg.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-1-thumb-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-1-thumb-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-1-thumb.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-img-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-left-bg.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/banner-thumb-frame.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archiv-img1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archiv-img2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archiv-img3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archives-img1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archives-img2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archives-img3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archives-img4.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/blog-archives-img5.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/border-img.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boxed-body-bg.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-10.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-11.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-12.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-13.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-14.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-15.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-16.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-17.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-18.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-3.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-4.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-5.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-6.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-7.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-8.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/boys-categorie-img-9.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-1.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-2.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-3.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-4.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-5.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-6.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brand-img-7.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/brands-pattren.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/btands-cloud.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/bullet.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/bx_loader.gif">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/cart-bag-img.png">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/cart-img.gif">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/client-logo-1.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/client-logo-2.jpg">
+      <publishTime>11/24/2014 18:45:55</publishTime>
+    </File>
+    <File Include="images/client-logo-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/client-logo-4.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/client-logo-5.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/client-logo-6.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/close-icon.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/collection-text-tag.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/credit-card-img %281%29.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/credit-card-img %282%29.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/credit-card-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/curv-img.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/favicon.ico">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/featured-cloud-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/featured-frame-icon-2.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/featured-frame-icon.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-frame.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-4.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-5.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-6.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-7.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-8.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/flicker-img-9.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/foot-icon.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/footer-aero-plane-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/footer-head-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/footer-pattren %281%29.gif">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/footer-pattren.gif">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/form-area-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/form-ribbon-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/free-shipping-banner.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/google_white2.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/head-strip.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/head-top-bg.gif">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/heading-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/hourse-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/inner-heading-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-banner-img.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-blog-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-blog-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-blog-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-blog-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-collection-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-collection-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-collection-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/latest-tweets-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/list-services-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/lock-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/logo-box-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/lower-footer-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/main-bg.gif">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/map-frame-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/mapcnt3.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/new-born-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/new-born-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/new-born-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/new-tag-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/order-banner-2.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/popular-product-bg.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/popular-product-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/popular-product-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/popular-product-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-bottom-after.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-bottom-before.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-bottom-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-left-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-right-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-top-after.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-top-before.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/post-frame-top-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-detail-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-10.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-11.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-12.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-16.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-4.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-5.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-6.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-7.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-8.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-img-9.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-4.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-5.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-6.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/product-listing-img-7.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-cloud-1.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-cloud-2.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-img-1-big.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/recent-post-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/register-tag.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/review-start-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/review_stars.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/ribbon-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/sade-face.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/sale-items-banner-1.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/sale-tag-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/services-cloud-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/shoes-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/shoes-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/shoes-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/simon.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/small-banner.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/social-inner-bg.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/special-banner.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/special-tag-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/star-icon.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/testimonials-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/testimonials-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/testimonials-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/timeline-left-arrow.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/timeline-right-arrow.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/top-rate-banner-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/top-right-icon.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/toys-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/toys-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/toys-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-img.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-img2.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-img3.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-left-arrow.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-right-arrow %281%29.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/tweets-right-arrow.png">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-1.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-10.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-2.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-3.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-4.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-5.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-6.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-7.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-8.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="images/two-col-img-9.jpg">
+      <publishTime>11/24/2014 18:45:56</publishTime>
+    </File>
+    <File Include="js/basic.js">
+      <publishTime>11/16/2014 22:22:07</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/childrenShop.js">
+      <publishTime>11/22/2014 14:51:44</publishTime>
+    </File>
+    <File Include="js/cp_load.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>11/21/2014 14:29:18</publishTime>
+    </File>
+    <File Include="js/cycle-slider.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/easy-slider.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/easy-slider.min.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/jquery-ui.min.js">
+      <publishTime>11/21/2014 13:01:40</publishTime>
+    </File>
+    <File Include="js/jquery.bxslider.min.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/jquery.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/jquery.mCustomScrollbar.js">
+      <publishTime>11/06/2014 22:19:18</publishTime>
+    </File>
+    <File Include="js/jquery.mousewheel.min.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/jquery.simplemodal.js">
+      <publishTime>11/06/2014 22:04:38</publishTime>
+    </File>
+    <File Include="js/js.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/mas-jquery.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/mouse.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/prettyph.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/respond.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/slider.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/underscore-min.js">
+      <publishTime>11/06/2014 22:04:38</publishTime>
+    </File>
+    <File Include="js/widget.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="js/{common,map,util,marker,infowindow}.js">
+      <publishTime>11/06/2014 21:50:44</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/14/2014 22:38:56</publishTime>
+    </File>
+    <File Include="Views/Account/LogOn.cshtml">
+      <publishTime>11/16/2014 15:01:06</publishTime>
+    </File>
+    <File Include="Views/Error/Default.cshtml">
+      <publishTime>11/16/2014 14:02:48</publishTime>
+    </File>
+    <File Include="Views/Error/Http404.cshtml">
+      <publishTime>11/14/2014 22:55:18</publishTime>
+    </File>
+    <File Include="Views/Home/AboutUs.cshtml">
+      <publishTime>11/06/2014 21:39:08</publishTime>
+    </File>
+    <File Include="Views/Home/Cart.cshtml">
+      <publishTime>11/22/2014 18:24:48</publishTime>
+    </File>
+    <File Include="Views/Home/Catalog.cshtml">
+      <publishTime>11/21/2014 14:35:51</publishTime>
+    </File>
+    <File Include="Views/Home/CatalogSection.cshtml">
+      <publishTime>11/22/2014 00:27:48</publishTime>
+    </File>
+    <File Include="Views/Home/Checkout.cshtml">
+      <publishTime>11/22/2014 18:30:18</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/14/2014 20:16:18</publishTime>
+    </File>
+    <File Include="Views/Home/ProductDetail.cshtml">
+      <publishTime>11/21/2014 14:36:53</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/14/2014 22:07:04</publishTime>
+    </File>
+    <File Include="Views/_LayoutPage.cshtml">
+      <publishTime>11/21/2014 17:00:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/25/2014 15:08:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

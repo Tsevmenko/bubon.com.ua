@@ -1,0 +1,40 @@
+﻿@model Site.Models.LogOnViewModel
+@{
+    ViewBag.Title = "Admin: Log In";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js" type="text/javascript"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<link rel='shortcut icon' href='img/fav.ico' type='image/x-icon' />
+<link href="~/Areas/Admin/Content/css/default.css" rel="stylesheet" />
+<link href="~/Areas/Admin/Content/css/backend.css" rel="stylesheet" />
+<link href="~/Content/css/contacts.css" rel="stylesheet" />
+<div class="content">
+    <h2>Логин</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        
+        <div class="change-password-section">
+            <div class="row clearfix">
+                <label for="c-password">E-mail</label>
+                @Html.TextBoxFor(p => p.UserName, new { @id = "c-password" })
+                @Html.ValidationMessageFor(p => p.UserName)
+            </div>
+            <div class="row clearfix">
+                <label for="n-password">Password</label>
+                @Html.PasswordFor(p => p.Password, new { @id = "n-password" })
+                @Html.ValidationMessageFor(p => p.Password)
+            </div>
+        </div>
+        <p>
+            <br>
+            <a href="#" class="main-btn3"><span>
+                <input type="submit" value="Войти"></span></a>
+        </p>
+    }
+</div>
+

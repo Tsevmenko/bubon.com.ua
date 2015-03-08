@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="uh343423_dbModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="uh343423_dbEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Buyers" EntityType="uh343423_dbModel.Buyer" />
+    <EntitySet Name="Categories" EntityType="uh343423_dbModel.Category" />
+    <EntitySet Name="CategoryDescriptions" EntityType="uh343423_dbModel.CategoryDescription" />
+    <EntitySet Name="Characteristics" EntityType="uh343423_dbModel.Characteristic" />
+    <EntitySet Name="CharacteristicValues" EntityType="uh343423_dbModel.CharacteristicValue" />
+    <EntitySet Name="Colors" EntityType="uh343423_dbModel.Color" />
+    <EntitySet Name="Currencies" EntityType="uh343423_dbModel.Currency" />
+    <EntitySet Name="Descriptions" EntityType="uh343423_dbModel.Description" />
+    <EntitySet Name="Discounts" EntityType="uh343423_dbModel.Discount" />
+    <EntitySet Name="Languages" EntityType="uh343423_dbModel.Language" />
+    <EntitySet Name="Orders" EntityType="uh343423_dbModel.Order" />
+    <EntitySet Name="Photos" EntityType="uh343423_dbModel.Photo" />
+    <EntitySet Name="Prices" EntityType="uh343423_dbModel.Price" />
+    <EntitySet Name="Products" EntityType="uh343423_dbModel.Product" />
+    <EntitySet Name="ProductOrders" EntityType="uh343423_dbModel.ProductOrder" />
+    <EntitySet Name="Sizes" EntityType="uh343423_dbModel.Size" />
+    <EntitySet Name="sysdiagrams" EntityType="uh343423_dbModel.sysdiagram" />
+    <AssociationSet Name="FK_Order_Buyers" Association="uh343423_dbModel.FK_Order_Buyers">
+      <End Role="Buyers" EntitySet="Buyers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Category_Category" Association="uh343423_dbModel.FK_Category_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Category1" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryDescription_Category" Association="uh343423_dbModel.FK_CategoryDescription_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="CategoryDescription" EntitySet="CategoryDescriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryDescription_Language" Association="uh343423_dbModel.FK_CategoryDescription_Language">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="CategoryDescription" EntitySet="CategoryDescriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Characteristic_Language" Association="uh343423_dbModel.FK_Characteristic_Language">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="Characteristic" EntitySet="Characteristics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CharacteristicValue_Characteristic" Association="uh343423_dbModel.FK_CharacteristicValue_Characteristic">
+      <End Role="Characteristic" EntitySet="Characteristics" />
+      <End Role="CharacteristicValue" EntitySet="CharacteristicValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CharacteristicValue_Product" Association="uh343423_dbModel.FK_CharacteristicValue_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="CharacteristicValue" EntitySet="CharacteristicValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Color_Product" Association="uh343423_dbModel.FK_Color_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Color" EntitySet="Colors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Currency" Association="uh343423_dbModel.FK_Price_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Price" EntitySet="Prices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description_Language" Association="uh343423_dbModel.FK_Description_Language">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="Description" EntitySet="Descriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description_Product" Association="uh343423_dbModel.FK_Description_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Description" EntitySet="Descriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder_Order" Association="uh343423_dbModel.FK_ProductOrder_Order">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="ProductOrder" EntitySet="ProductOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Photo_Product" Association="uh343423_dbModel.FK_Photo_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Photo" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Product1" Association="uh343423_dbModel.FK_Price_Product1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Price" EntitySet="Prices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductOrder_Product" Association="uh343423_dbModel.FK_ProductOrder_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductOrder" EntitySet="ProductOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Size_Size" Association="uh343423_dbModel.FK_Size_Size">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Size" EntitySet="Sizes" />
+    </AssociationSet>
+    <AssociationSet Name="ProductDiscounts" Association="uh343423_dbModel.ProductDiscounts">
+      <End Role="Discount" EntitySet="Discounts" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="ProductsInCategories" Association="uh343423_dbModel.ProductsInCategories">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Buyer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="SecondName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="RSS" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="uh343423_dbModel.FK_Order_Buyers" FromRole="Buyers" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentCategoryID" Type="Int32" />
+    <Property Name="DepthLevel" Type="Int32" />
+    <NavigationProperty Name="Category1" Relationship="uh343423_dbModel.FK_Category_Category" FromRole="Category" ToRole="Category1" />
+    <NavigationProperty Name="Category2" Relationship="uh343423_dbModel.FK_Category_Category" FromRole="Category1" ToRole="Category" />
+    <NavigationProperty Name="CategoryDescriptions" Relationship="uh343423_dbModel.FK_CategoryDescription_Category" FromRole="Category" ToRole="CategoryDescription" />
+    <NavigationProperty Name="Products" Relationship="uh343423_dbModel.ProductsInCategories" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="CategoryDescription">
+    <Key>
+      <PropertyRef Name="LanguageId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="LanguageId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Category" Relationship="uh343423_dbModel.FK_CategoryDescription_Category" FromRole="CategoryDescription" ToRole="Category" />
+    <NavigationProperty Name="Language" Relationship="uh343423_dbModel.FK_CategoryDescription_Language" FromRole="CategoryDescription" ToRole="Language" />
+  </EntityType>
+  <EntityType Name="Characteristic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="LanguageId" Type="Int32" />
+    <Property Name="IsFiltered" Type="Boolean" />
+    <NavigationProperty Name="Language" Relationship="uh343423_dbModel.FK_Characteristic_Language" FromRole="Characteristic" ToRole="Language" />
+    <NavigationProperty Name="CharacteristicValues" Relationship="uh343423_dbModel.FK_CharacteristicValue_Characteristic" FromRole="Characteristic" ToRole="CharacteristicValue" />
+  </EntityType>
+  <EntityType Name="CharacteristicValue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="Value" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="CharacteristicId" Type="Int32" />
+    <NavigationProperty Name="Characteristic" Relationship="uh343423_dbModel.FK_CharacteristicValue_Characteristic" FromRole="CharacteristicValue" ToRole="Characteristic" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_CharacteristicValue_Product" FromRole="CharacteristicValue" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Value" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SRC" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_Color_Product" FromRole="Color" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Prices" Relationship="uh343423_dbModel.FK_Price_Currency" FromRole="Currency" ToRole="Price" />
+  </EntityType>
+  <EntityType Name="Description">
+    <Key>
+      <PropertyRef Name="LanguageId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="LanguageId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Description1" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Size" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Language" Relationship="uh343423_dbModel.FK_Description_Language" FromRole="Description" ToRole="Language" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_Description_Product" FromRole="Description" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Discount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Color" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Products" Relationship="uh343423_dbModel.ProductDiscounts" FromRole="Discount" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="IsItDefault" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CategoryDescriptions" Relationship="uh343423_dbModel.FK_CategoryDescription_Language" FromRole="Language" ToRole="CategoryDescription" />
+    <NavigationProperty Name="Characteristics" Relationship="uh343423_dbModel.FK_Characteristic_Language" FromRole="Language" ToRole="Characteristic" />
+    <NavigationProperty Name="Descriptions" Relationship="uh343423_dbModel.FK_Description_Language" FromRole="Language" ToRole="Description" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="BuyerId" Type="Int32" Nullable="false" />
+    <Property Name="Country" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="SecondName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="RSS" Type="Boolean" Nullable="false" />
+    <Property Name="DateOfCreation" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Buyer" Relationship="uh343423_dbModel.FK_Order_Buyers" FromRole="Order" ToRole="Buyers" />
+    <NavigationProperty Name="ProductOrders" Relationship="uh343423_dbModel.FK_ProductOrder_Order" FromRole="Order" ToRole="ProductOrder" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsMain" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_Photo_Product" FromRole="Photo" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="CurrencyId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CurrencyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Currency" Relationship="uh343423_dbModel.FK_Price_Currency" FromRole="Price" ToRole="Currency" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_Price_Product1" FromRole="Price" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="OldPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CharacteristicValues" Relationship="uh343423_dbModel.FK_CharacteristicValue_Product" FromRole="Product" ToRole="CharacteristicValue" />
+    <NavigationProperty Name="Colors" Relationship="uh343423_dbModel.FK_Color_Product" FromRole="Product" ToRole="Color" />
+    <NavigationProperty Name="Descriptions" Relationship="uh343423_dbModel.FK_Description_Product" FromRole="Product" ToRole="Description" />
+    <NavigationProperty Name="Photos" Relationship="uh343423_dbModel.FK_Photo_Product" FromRole="Product" ToRole="Photo" />
+    <NavigationProperty Name="Prices" Relationship="uh343423_dbModel.FK_Price_Product1" FromRole="Product" ToRole="Price" />
+    <NavigationProperty Name="ProductOrders" Relationship="uh343423_dbModel.FK_ProductOrder_Product" FromRole="Product" ToRole="ProductOrder" />
+    <NavigationProperty Name="Sizes" Relationship="uh343423_dbModel.FK_Size_Size" FromRole="Product" ToRole="Size" />
+    <NavigationProperty Name="Discounts" Relationship="uh343423_dbModel.ProductDiscounts" FromRole="Product" ToRole="Discount" />
+    <NavigationProperty Name="Categories" Relationship="uh343423_dbModel.ProductsInCategories" FromRole="Product" ToRole="Category" />
+  </EntityType>
+  <EntityType Name="ProductOrder">
+    <Key>
+      <PropertyRef Name="ProdId" />
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="ProdId" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Order" Relationship="uh343423_dbModel.FK_ProductOrder_Order" FromRole="ProductOrder" ToRole="Order" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_ProductOrder_Product" FromRole="ProductOrder" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Size">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="uh343423_dbModel.FK_Size_Size" FromRole="Size" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Order_Buyers">
+    <End Role="Buyers" Type="uh343423_dbModel.Buyer" Multiplicity="1" />
+    <End Role="Order" Type="uh343423_dbModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Buyers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="BuyerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Category_Category">
+    <End Role="Category" Type="uh343423_dbModel.Category" Multiplicity="0..1" />
+    <End Role="Category1" Type="uh343423_dbModel.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Category1">
+        <PropertyRef Name="ParentCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryDescription_Category">
+    <End Role="Category" Type="uh343423_dbModel.Category" Multiplicity="1" />
+    <End Role="CategoryDescription" Type="uh343423_dbModel.CategoryDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryDescription">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryDescription_Language">
+    <End Role="Language" Type="uh343423_dbModel.Language" Multiplicity="1" />
+    <End Role="CategoryDescription" Type="uh343423_dbModel.CategoryDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryDescription">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Characteristic_Language">
+    <End Role="Language" Type="uh343423_dbModel.Language" Multiplicity="0..1" />
+    <End Role="Characteristic" Type="uh343423_dbModel.Characteristic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Characteristic">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CharacteristicValue_Characteristic">
+    <End Role="Characteristic" Type="uh343423_dbModel.Characteristic" Multiplicity="0..1" />
+    <End Role="CharacteristicValue" Type="uh343423_dbModel.CharacteristicValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Characteristic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CharacteristicValue">
+        <PropertyRef Name="CharacteristicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CharacteristicValue_Product">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="0..1" />
+    <End Role="CharacteristicValue" Type="uh343423_dbModel.CharacteristicValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CharacteristicValue">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Color_Product">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="Color" Type="uh343423_dbModel.Color" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Color">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Currency">
+    <End Role="Currency" Type="uh343423_dbModel.Currency" Multiplicity="1" />
+    <End Role="Price" Type="uh343423_dbModel.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="CurrencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description_Language">
+    <End Role="Language" Type="uh343423_dbModel.Language" Multiplicity="1" />
+    <End Role="Description" Type="uh343423_dbModel.Description" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Description">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description_Product">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="Description" Type="uh343423_dbModel.Description" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Description">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder_Order">
+    <End Role="Order" Type="uh343423_dbModel.Order" Multiplicity="1" />
+    <End Role="ProductOrder" Type="uh343423_dbModel.ProductOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductOrder">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Photo_Product">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="Photo" Type="uh343423_dbModel.Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Photo">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Product1">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="Price" Type="uh343423_dbModel.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductOrder_Product">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="ProductOrder" Type="uh343423_dbModel.ProductOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductOrder">
+        <PropertyRef Name="ProdId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Size_Size">
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="1" />
+    <End Role="Size" Type="uh343423_dbModel.Size" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Size">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductDiscounts">
+    <End Role="Discount" Type="uh343423_dbModel.Discount" Multiplicity="*" />
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="*" />
+  </Association>
+  <Association Name="ProductsInCategories">
+    <End Role="Category" Type="uh343423_dbModel.Category" Multiplicity="*" />
+    <End Role="Product" Type="uh343423_dbModel.Product" Multiplicity="*" />
+  </Association>
+</Schema>

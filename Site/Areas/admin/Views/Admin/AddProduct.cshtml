@@ -1,0 +1,70 @@
+﻿@model ViewModels.Views.NewProduct
+
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdminPage.cshtml";
+}
+
+<h2>AddProduct</h2>
+@using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table style="margin: 50px;">
+        <tr>
+            <td style="width: 100px;">Категории:</td>
+            <td style="width: 50%">   @Html.ListBoxFor(p => p.categoryIds, Model.categories)</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Название:</td>
+            <td style="width: 50%">   @Html.TextBoxFor(p => p.name)</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Цена:</td>
+            <td style="width: 50%">   @Html.TextBoxFor(p => p.price)</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Старая цена:</td>
+            <td style="width: 50%">   @Html.TextBoxFor(p => p.oldPrice)</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Описание:</td>
+            <td style="width: 50%">   @Html.TextAreaFor(p => p.description)</td>
+        </tr>
+
+        <tr>
+            <td style="width: 100px;">Фотографии:</td>
+            <td style="width: 50%">   
+                <div class="form-field">
+                    <div class="upload-container">
+                        <br /><p>Основная фотография:</p>
+                        <div class="main-photo">
+                            <input type="file" name="mainPhoto" id="fileMain" />
+                        </div>
+                        <br />
+                        <p>Остальные фотографии:</p>
+                        <div class="upload">
+                            <input type="file" name="files" id="file1" />
+                            <img style="width: 30px; height: 30px;" src="@Url.Content("~/images/close-icon.png")" alt="Remove picture." />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr><td><input value="Сохранить" class="button" type="submit"></td></tr>
+    </table>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var currentImage = 1;
+        $("body").on("change", "input[name='files']", function () {
+            var pathToRemoveIcon = "@Url.Content("~/images/close-icon.png")";
+            currentImage = currentImage + 1;
+            var htmlToAppend = '<div class="upload"><input type="file" name="files" id="file' + currentImage + '" /><img style="width: 30px; height: 30px;" src="' + pathToRemoveIcon + '" alt="Remove picture." /></div>';
+            $('.upload-container').append(htmlToAppend);
+        }).on("click", ".upload img", function () {
+            if ($(this).parent().siblings().length > 0) {
+                $(this).parent().remove();
+            }
+        });
+    });
+</script>

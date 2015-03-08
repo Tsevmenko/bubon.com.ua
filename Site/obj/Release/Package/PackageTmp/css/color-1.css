@@ -1,0 +1,43 @@
+/*Background Color Start*/
+.social-box, .social-back-top a, .collection-banner-area .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .page-404-top a.num, .page-404-top a.sad, .password-page a.lock, .list-of-services ul li span.round, .services-page .box .frame, .form-signin .btn-login, .left-box-1 ul li.active a, .left-box-1 ul li a:hover, .top-rate-tab .nav-tabs > li > a{
+	background-color:#00b4d8 !important;
+	background-image:none;
+}
+/*Background Color End*/
+
+/*Text Color Start*/
+.featured-product .holder .cloud h2 span.breck, .cart-bag strong.item, #clouds strong.title span.pink, #clouds strong.title span.pink, .list-cloud h2 span.breck, .text-box h3, .right-box h3, .search-product-box h3 span.pink, .tweets-box .text h3, .home-map .caption h4, .top-rate-box h3, .popular-product-top h4 span.pink, .popular-product-top  strong.title span.pink, .product-inner-box .caption .left h5, .product-inner-box .caption .left strong.price, .latest-collection h4, .form-area-inner .right h4, .heading h1, .about-our .text h2 span.pink, .about-more h3 span.pink, .about-testimonials blockquote strong.name, .our-expert-cloud h3 span.pink, .our-client h4 span.pink, .return-box strong.back-to, .return-box strong.back-to a.link, .input-pass, .testimonial-box h3, .testo-out-client h3 span.pink, .contact-detail h2 span.pink, .faq h2 span.pink, .ask-question-box h2 span.pink, .blog-frame strong.mnt, .aside-input, .aside-search-box .fa, .list-of-services h2 span.pink, .blog-archives h2 span.pink, .flicker-photo h2 span.pink, form.checkout h3  span.pink, .make-special-cloud h2 span.pink, .product-cart-area .text h2 span.pink, .related-products h2 span.pink, #banner .caption .text h1 span.pink, .order-left-banner .caption h3 span.pink, .Pink{
+	color:#ff2066;
+}
+/*Text Color End*/
+
+/*Border Color Start*/
+.featured-detail li .box a.btn-buy, .content-box-01 a.add-basket, .timeline .box-1 .small-round, .text-box a.btn-read-more{
+	border-color:#c0003b;
+}
+/*Border Color End*/
+
+/*Button Color Start*/
+.featured-detail li .box a.btn-buy, .text-box a.btn-read-more, .content-box-01 a.add-basket, .product-inner-box .caption .right a.shop-btn, .search-product-box .btn-search, .btn-continue, .post-box a.read-more, .update .form-btn, .total .add-cart, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .add-cart-col a.btn-add-cart, .order-left-banner .caption a.shop-now, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color:#ff2066;
+	background-image:none;
+}
+.featured-detail li .frame a.add-wishlist{
+	background:rgba(255,185,3,0.7);
+}
+/*Button Color End*/
+
+/*Button Hover Color Start*/
+.featured-detail li .box a.btn-buy:hover, .text-box a.btn-read-more:hover, .right-box a.btn-more:hover, .content-box-01 a.add-basket:hover, .product-inner-box .caption .right a.shop-btn:hover, .social-link li a:hover, .page-404-top a.num:hover, .page-404-top a.sad:hover, .password-page a.lock:hover, .btn-unlock:hover, .post-box a.read-more:hover, .btn-continue:hover, .update .form-btn:hover, .total .add-cart:hover, .add-cart-col a.btn-add-cart:hover, .search-product-box .btn-search:hover, .btn-search-01:hover, .order-left-banner .caption a.shop-now:hover{
+	opacity: 0.7;
+    transition: all 0.5s ease-out 0s;
+	box-shadow:0 0 4px #000;
+	background-image:none;
+}
+/*Button Hover Color End*/
+
+/*Timeline Background Color Start*/
+.timeline .box-1 .round-frame:before, .timeline .box-1 .round-frame-2:before, .timeline .box-1 .small-round:after{
+	background:#ffc13b;
+}
+/*Timeline Background Color End*/

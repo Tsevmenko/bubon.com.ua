@@ -1,0 +1,10 @@
+E:\Shop\ViewModels\bin\Debug\ViewModels.dll
+E:\Shop\ViewModels\bin\Debug\ViewModels.pdb
+E:\Shop\ViewModels\obj\Debug\ViewModels.csprojResolveAssemblyReference.cache
+E:\Shop\ViewModels\obj\Debug\ViewModels.dll
+E:\Shop\ViewModels\obj\Debug\ViewModels.pdb
+E:\ChildrenShop\ViewModels\bin\Debug\ViewModels.dll
+E:\ChildrenShop\ViewModels\bin\Debug\ViewModels.pdb
+E:\ChildrenShop\ViewModels\obj\Debug\ViewModels.csprojResolveAssemblyReference.cache
+E:\ChildrenShop\ViewModels\obj\Debug\ViewModels.dll
+E:\ChildrenShop\ViewModels\obj\Debug\ViewModels.pdb

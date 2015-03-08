@@ -1,0 +1,113 @@
+﻿@model ViewModels.Views.CategoryModel
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<!--Categories Page Start-->
+<div class="inner-page">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <div class="pull-left">
+                    <h1>Категории</h1>
+                    <strong class="title">Каталог сайта</strong>
+                </div>
+                @{/*
+                <div class="pull-right">
+                
+                    int count = 0;
+                    if (Session["cart"] != null)
+                    {
+                        List<int> cart = (List<int>)Session["cart"];
+                        count = cart.Count;
+                    }
+                    <h1><a href="/cart/" id="cartCounter">Товаров в корзине: @count</a></h1>
+                
+                </div>*/
+                }
+            </div>
+        </div>
+    </div>
+    <section class="categories-page" style="width: 270px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="categories-tab-nav">
+                        <h2>Категории товаров</h2>
+                        <ul class="nav nav-tabs categories-nav" id="myTab">
+                            @foreach (var el in Model.categories)
+                            {
+                                <li @if (Model.id == el.id)
+                                    { @Html.Raw("class=\"active\"");
+                                    }>@Html.ActionLink(el.name, "CatalogSection", new { id = el.id })</li>
+                            }
+                            @if (Model.parentId != null)
+                            {
+                                if (Model.parentId == Model.id)
+                                { <li>@Html.ActionLink("<- Назад", "CatalogSection", new { id = 0 })</li> }
+                                else
+                                { <li>@Html.ActionLink("Назад", "CatalogSection", new { id = Model.parentId })</li> }
+                            }
+                        </ul>
+                    </div>
+                    @{/*<div class="offer-banner fadeIn animated"><img src="~/images/special-banner.jpg" alt="img"></div>
+              <div class="latest-collection space fadeIn cp_load">
+                <div class="latest-collection-inner">
+                  <h4>Latest Collection</h4>
+                  <p>Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.</p>
+                  <a href="http://html.crunchpress.net/children-store/boxed/categories.html#" class="btn-view">View More</a>
+                  <div class="collection-banner-area">
+                    <div class="caption"></div>
+                    <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 333px;"><ul class="bxslider" style="width: 515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-220px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 220px;" class="bx-clone"><img src="~/images/latest-collection-img-3.jpg" alt="img"></li>
+                      <li style="float: left; list-style: none; position: relative; width: 220px;"><img src="~/images/latest-collection-img-1.jpg" alt="img"></li>
+                      <li style="float: left; list-style: none; position: relative; width: 220px;"><img src="~/images/latest-collection-img-2.jpg" alt="img"></li>
+                      <li style="float: left; list-style: none; position: relative; width: 220px;"><img src="~/images/latest-collection-img-3.jpg" alt="img"></li>
+                    <li style="float: left; list-style: none; position: relative; width: 220px;" class="bx-clone"><img src="~/images/latest-collection-img-1.jpg" alt="img"></li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+                  </div>
+                </div>
+              </div>*/}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-page" style="margin-left: 40px; width: 70%;">
+        <div class="container" style="width: 1165px">
+            <div class="row">
+                <ul>
+                    @foreach (var el in Model.product)
+                    {
+                        <li>
+                            <div class="frame fadeInLeft cp_load">
+                                <span class="left">&nbsp;</span> <span class="right">&nbsp;</span> <span class="top">&nbsp;</span> <span class="bottom">&nbsp;</span>
+                                <div class="thumb" style="width: 265px; height: 260px; text-align: center; background-color: white;">
+                                    <a href="/productdetail/?id=@el.id">
+                                        <img src="@if (el.mainImage != null && el.mainImage != " ")
+                                                  { @el.mainImage }
+                                                  else
+                                                  { @Html.Raw("/images/products/non-image.jpg");
+                                                  } " alt="@el.name"
+                                            ></a>
+                                    <div class="caption">
+                                        <ul>
+                                            <li class="buySect"><a href="#"><i data-prod_id="@el.id" class="fa fa-shopping-cart buyer"></i>Купить</a></li>
+                                            <li><a href="/productdetail/?id=@el.id"><i class="fa fa-search"></i>Подробнее</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    @if (el.name.Length > 17) { el.name = el.name.Substring(0, 17) + "..."; }
+                                    <strong class="title">@el.name</strong> <strong class="price">@el.price грн.</strong>
+                                    @if (el.description.Length > 57) { el.description = el.description.Substring(0, 57) + "..."; }
+                                    <p>@el.description</p>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<!--Categories Page End-->

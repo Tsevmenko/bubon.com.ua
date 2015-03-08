@@ -1,0 +1,10 @@
+E:\Shop\DBModels\bin\Debug\DBModels.dll
+E:\Shop\DBModels\bin\Debug\DBModels.pdb
+E:\Shop\DBModels\obj\Debug\DBModels.csprojResolveAssemblyReference.cache
+E:\Shop\DBModels\obj\Debug\DBModels.dll
+E:\Shop\DBModels\obj\Debug\DBModels.pdb
+E:\ChildrenShop\DBModels\bin\Debug\DBModels.dll
+E:\ChildrenShop\DBModels\bin\Debug\DBModels.pdb
+E:\ChildrenShop\DBModels\obj\Debug\DBModels.csprojResolveAssemblyReference.cache
+E:\ChildrenShop\DBModels\obj\Debug\DBModels.dll
+E:\ChildrenShop\DBModels\obj\Debug\DBModels.pdb
